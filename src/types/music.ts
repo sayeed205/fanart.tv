@@ -2,7 +2,7 @@
  * TypeScript interfaces for music-related API responses from Fanart.tv
  */
 
-import type { ImageBase, LatestResponse } from './common.ts';
+import type { ImageBase, LatestResponse } from "./common.ts";
 
 /**
  * Artist background image interface

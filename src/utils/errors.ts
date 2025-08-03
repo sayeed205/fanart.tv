@@ -9,11 +9,11 @@ export class FanartApiError extends Error {
   constructor(
     message: string,
     public readonly statusCode?: number,
-    public readonly response?: unknown
+    public readonly response?: unknown,
   ) {
     super(message);
-    this.name = 'FanartApiError';
-    
+    this.name = "FanartApiError";
+
     // Maintains proper stack trace for where our error was thrown (only available on V8)
     if (Error.captureStackTrace) {
       Error.captureStackTrace(this, FanartApiError);
@@ -25,9 +25,9 @@ export class FanartApiError extends Error {
  * Error thrown when API key is invalid or missing
  */
 export class AuthenticationError extends FanartApiError {
-  constructor(message: string = 'Invalid or missing API key') {
+  constructor(message: string = "Invalid or missing API key") {
     super(message, 401);
-    this.name = 'AuthenticationError';
+    this.name = "AuthenticationError";
   }
 }
 
@@ -35,9 +35,11 @@ export class AuthenticationError extends FanartApiError {
  * Error thrown when rate limit is exceeded
  */
 export class RateLimitError extends FanartApiError {
-  constructor(message: string = 'Rate limit exceeded. Please try again later.') {
+  constructor(
+    message: string = "Rate limit exceeded. Please try again later.",
+  ) {
     super(message, 429);
-    this.name = 'RateLimitError';
+    this.name = "RateLimitError";
   }
 }
 
@@ -45,9 +47,9 @@ export class RateLimitError extends FanartApiError {
  * Error thrown when requested resource is not found
  */
 export class NotFoundError extends FanartApiError {
-  constructor(message: string = 'Requested resource not found') {
+  constructor(message: string = "Requested resource not found") {
     super(message, 404);
-    this.name = 'NotFoundError';
+    this.name = "NotFoundError";
   }
 }
 
@@ -55,9 +57,9 @@ export class NotFoundError extends FanartApiError {
  * Error thrown when request times out
  */
 export class TimeoutError extends FanartApiError {
-  constructor(message: string = 'Request timed out') {
+  constructor(message: string = "Request timed out") {
     super(message, 408);
-    this.name = 'TimeoutError';
+    this.name = "TimeoutError";
   }
 }
 
@@ -65,8 +67,8 @@ export class TimeoutError extends FanartApiError {
  * Error thrown for network-related issues
  */
 export class NetworkError extends FanartApiError {
-  constructor(message: string = 'Network error occurred') {
+  constructor(message: string = "Network error occurred") {
     super(message);
-    this.name = 'NetworkError';
+    this.name = "NetworkError";
   }
 }

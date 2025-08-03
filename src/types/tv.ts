@@ -2,7 +2,7 @@
  * TypeScript interfaces for TV show-related API responses from Fanart.tv
  */
 
-import type { ImageBase, LatestResponse } from './common.ts';
+import type { ImageBase, LatestResponse } from "./common.ts";
 
 /**
  * TV show clear logo image interface

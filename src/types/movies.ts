@@ -2,7 +2,7 @@
  * TypeScript interfaces for movie-related API responses from Fanart.tv
  */
 
-import type { ImageBase, LatestResponse } from './common.ts';
+import type { ImageBase, LatestResponse } from "./common.ts";
 
 /**
  * Movie poster image with size information
