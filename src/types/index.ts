@@ -21,7 +21,18 @@ export type {
 
 // Music types
 export type {
-    AlbumImages, ArtistImages, LabelImages
+    AlbumCover,
+    AlbumImages,
+    ArtistBackground,
+    ArtistImages,
+    ArtistThumb,
+    CdArt,
+    HdMusicLogo,
+    LabelImage,
+    LabelImages,
+    LatestArtists,
+    MusicBanner,
+    MusicLogo
 } from './music.ts';
 
 // TV types
