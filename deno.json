@@ -5,6 +5,7 @@
       ".": "./src/main.ts",
       "./types": "./src/types/index.ts"
     },
+    "license": "MIT",
     "publish": {
       "include": [
         "LICENSE",
