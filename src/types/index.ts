@@ -1,10 +1,27 @@
 /**
  * Re-exports all type definitions for the Fanart.tv API client
+ * 
+ * This module provides a centralized export point for all TypeScript interfaces
+ * and types used throughout the Fanart.tv API client. Import types from here
+ * when you need type definitions for API responses or client configuration.
+ * 
+ * @example
+ * ```typescript
+ * import type { MovieImages, ArtistImages, RequestOptions } from '@hitarashi/fanart/types';
+ * 
+ * const options: RequestOptions = { usePreview: true };
+ * const movieData: MovieImages = await fanart.movie.get(550, options);
+ * ```
+ * 
+ * @module
  */
 
 // Common types
 export type {
-    ArtworkCollection, ImageBase, LatestResponse, RequestOptions
+    ArtworkCollection,
+    ImageBase,
+    LatestResponse,
+    RequestOptions
 } from './common.ts';
 
 // Movie types
@@ -54,5 +71,11 @@ export type {
 
 // Error classes
 export {
-    AuthenticationError, FanartApiError, NetworkError, NotFoundError, RateLimitError, TimeoutError
+    AuthenticationError,
+    FanartApiError,
+    NetworkError,
+    NotFoundError,
+    RateLimitError,
+    TimeoutError
 } from '../utils/errors.ts';
+
