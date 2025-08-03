@@ -18,59 +18,10 @@
  */
 
 // Export the main Fanart client class
-export { Fanart } from "./fanart.ts";
+export * from "./fanart.ts";
 
 // Re-export all types for convenience
-export type {
-  // Music types
-  AlbumCover,
-  AlbumImages,
-  ArtistBackground,
-  ArtistImages,
-  ArtistThumb,
-  // Common types
-  ArtworkCollection,
-  CdArt,
-  // TV types
-  CharacterArt,
-  ClearArt,
-  ClearLogo,
-  HdClearArt,
-  HdMusicLogo,
-  HdTvLogo,
-  ImageBase,
-  LabelImage,
-  LabelImages,
-  LatestArtists,
-  // Movie types
-  LatestMovies,
-  LatestResponse,
-  LatestShows,
-  MovieBackground,
-  MovieBanner,
-  MovieDisc,
-  MovieImages,
-  MovieLogo,
-  MoviePoster,
-  MovieThumb,
-  MusicBanner,
-  MusicLogo,
-  RequestOptions,
-  SeasonPoster,
-  SeasonThumb,
-  ShowBackground,
-  ShowImages,
-  TvBanner,
-  TvPoster,
-  TvThumb,
-} from "./types/index.ts";
+export type * from "./types/index.ts";
 
 // Export error classes
-export {
-  AuthenticationError,
-  FanartApiError,
-  NetworkError,
-  NotFoundError,
-  RateLimitError,
-  TimeoutError,
-} from "./utils/errors.ts";
+export * from "./utils/errors.ts";

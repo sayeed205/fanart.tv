@@ -298,9 +298,7 @@ describe("Error Handling", () => {
       } catch (error) {
         if (error instanceof FanartApiError) {
           expect(error.statusCode).toBeDefined();
-          // Response might be undefined for some errors, so we'll just check if it exists
-          expect(error.response !== undefined || error.response === undefined)
-            .toBe(true);
+
         }
       }
     });

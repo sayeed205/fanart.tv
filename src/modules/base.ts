@@ -153,7 +153,7 @@ export abstract class BaseClient {
     }
 
     // Handle objects
-    if (typeof data === "object" && data !== null) {
+    if (typeof data === "object") {
       const processed: Record<string, unknown> = {};
 
       for (const [key, value] of Object.entries(data)) {

@@ -89,7 +89,7 @@ export class ArtistsModule extends BaseClient {
  * Includes nested artists module and direct methods for albums and labels
  */
 export class MusicModule extends BaseClient {
-  /** Artists sub-module for artist-specific artwork */
+  /** Artists submodule for artist-specific artwork */
   public readonly artists: ArtistsModule;
 
   /**

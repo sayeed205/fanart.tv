@@ -154,7 +154,7 @@ Fanart.tv has rate limits on their API. The client will throw a `RateLimitError`
 
 ## Examples
 
-Check out the [examples](./examples/) directory for more detailed usage examples:
+Check out the [examples](./examples) directory for more detailed usage examples:
 
 - [Basic Usage](./examples/basic-usage.ts) - Simple API calls
 - [Complete Workflow](./examples/complete-workflow.ts) - Advanced usage with error handling

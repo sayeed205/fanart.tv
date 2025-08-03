@@ -1,5 +1,5 @@
 /**
- * TV shows API module for accessing Fanart.tv TV show artwork
+ * TV shows API module for accessing fanart.tv - TV show artwork
  */
 
 import type { RequestOptions } from "../types/common.ts";
