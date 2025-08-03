@@ -37,7 +37,19 @@ export type {
 
 // TV types
 export type {
-    ShowImages
+    CharacterArt,
+    ClearArt,
+    ClearLogo,
+    HdClearArt,
+    HdTvLogo,
+    LatestShows,
+    SeasonPoster,
+    SeasonThumb,
+    ShowBackground,
+    ShowImages,
+    TvBanner,
+    TvPoster,
+    TvThumb
 } from './tv.ts';
 
 // Error classes
