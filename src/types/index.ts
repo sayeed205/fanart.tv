@@ -9,7 +9,14 @@ export type {
 
 // Movie types
 export type {
-    MovieImages
+    LatestMovies,
+    MovieBackground,
+    MovieBanner,
+    MovieDisc,
+    MovieImages,
+    MovieLogo,
+    MoviePoster,
+    MovieThumb
 } from './movies.ts';
 
 // Music types
